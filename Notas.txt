@@ -1,0 +1,16 @@
+Tomar la fecha con / o - o lo que sea
+recorrerlo 
+hacer un arreglo nuevo 
+insertar los valores en un arreglo nuevo sin / o - .
+ejecutar un query que inserte ese valor
+
+
+verificar la fecha actual de la pagina o servidor, conparar el mes de los usuarios y mostrar los que cumplan ese mes
+tomar y convertir el arreglo 
+tomar los valores y agregarlos a un arreglo nuevo para mostrarlo 
+
+
+se debe agregar un cammpo nuevo en la base de datos para agregar la fecha de nacimiento
+
+
+hay que revisar en que va cada cosa, se puede usar como referencia los demas para saber como hacerlo

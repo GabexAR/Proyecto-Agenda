@@ -22,6 +22,7 @@ class ContactRepository:
             date_str = contactDB[6] 
             if not date_str == None:
                 contact.birthday = date_str.strftime('%d-%m-%Y')
+                print("Prueba")
             else:
                 contact.birthday = date_str
             contacts.append(contact)

@@ -58,11 +58,17 @@ class ContactView:
         contact = ContactForUpdate(0, name, surname, email, self.user_logged.username)
         yes = input("¡Quiere ingresar la fecha de cumpleaños del contacto? Ingrese SI o NO: ")
         if yes.upper() == "SI":
-            birthday = input("Ingrese la fecha de cumpleañs, por favor que sea en el formato DD-MM-YYYY: ").replace("/" and"." and",","-")
-            birthday_order = OrderDate.order_date(birthday)
-            contact.birthday = birthday_order
-
+            close = False
+            
+            while close == False:
+        
+                birthday = input("Ingrese la fecha de cumpleañs, por favor que sea en el formato DD-MM-YYYY: ").replace("/" and"." and",","-")
+                birthday_order, close = OrderDate.order_date(birthday)
+            
+            
+        contact.birthday = birthday_order
         contactFull.add_contact(contact)
+        
         input(" Presione enter para continuar ".center(50, "!"))
         
 
